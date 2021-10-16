@@ -1,6 +1,6 @@
 # Pretty
 
-[![GoDoc](https://img.shields.io/badge/api-reference-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/tidwall/pretty) 
+[![GoDoc](https://img.shields.io/badge/api-reference-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/pablodz/pretty) 
 
 Pretty is a Go package that provides [fast](#performance) methods for formatting JSON for human readability, or to compact JSON for smaller payloads.
 
@@ -12,7 +12,7 @@ Getting Started
 To start using Pretty, install Go and run `go get`:
 
 ```sh
-$ go get -u github.com/tidwall/pretty
+$ go get -u github.com/pablodz/pretty
 ```
 
 This will retrieve the library.
@@ -113,7 +113,7 @@ BenchmarkJSONCompact-16       685111    1699 ns/op    442 B/op     0 allocs/op
 
 *These benchmarks were run on a MacBook Pro 2.4 GHz 8-Core Intel Core i9.*
 
-## Contact
+## Contact main repo
 Josh Baker [@tidwall](http://twitter.com/tidwall)
 
 ## License

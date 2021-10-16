@@ -26,6 +26,11 @@ type Options struct {
 // DefaultOptions is the default options for pretty formats.
 var DefaultOptions = &Options{Width: 80, Prefix: "", Indent: "  ", SortKeys: false}
 
+// Parse by default commands from struct
+func ColorPretty(json []byte) []byte {
+	return Color(Pretty(json), nil)
+}
+
 // Pretty converts the input json into a more human readable format where each
 // element is on it's own line with clear indentation.
 func Pretty(json []byte) []byte { return PrettyOptions(json, nil) }

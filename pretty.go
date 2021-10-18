@@ -27,8 +27,8 @@ type Options struct {
 var DefaultOptions = &Options{Width: 80, Prefix: "", Indent: "  ", SortKeys: false}
 
 // Parse by default commands from struct
-func ColorPretty(json []byte) []byte {
-	return Color(Pretty(json), nil)
+func ColorPretty(json []byte) string {
+	return string(Color(Pretty(json), nil))
 }
 
 // Pretty converts the input json into a more human readable format where each
